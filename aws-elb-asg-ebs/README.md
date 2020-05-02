@@ -1,4 +1,4 @@
-# AWS Fundamentals II - ELB + ASG + EBS
+# ELB + ASG + EBS
 
 ## Load Balancers
 * Load balancers are server that forward internet traffic to multiple servers(EC2 instances) downstream
