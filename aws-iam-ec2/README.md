@@ -1,4 +1,30 @@
-# EC2 Notes
+# IAM + EC2 Notes
+
+## IAM Security
+* IAM (Identity and Access Management)
+* Your whole AWS Security is there
+  * Users: usually a physical person
+  * Groups: contains users(ex. engineers, devops)
+  * Roles: internal usage within AWS resources
+* Root accounts should never be used(and shared)
+* Users should be created with proper permissions
+* IAM is at the center of AWS
+* Policies are written in JSON
+* IAM has predefined Managed Policies
+* It is best to give users the minimal amount of permissions they need to perform their job(Least privilege principle)
+
+## IAM Federation
+* Big enterprises usually integrate their own repository of users with IAM
+* This way, one can login into AWS using their company credentials
+* Identity Federation uses SAML standard(Active Directory)
+
+## Summary
+* One IAM user per Physical Person
+* One IAM role per application
+* IAM Credentials should never be shared
+* Never write IAM credentials in code ever.
+* Never use the root account except for initial setup.
+* Never use ROOT IAM Credentials
 
 ## What's an AMI
 * Base images for running EC2 instances
