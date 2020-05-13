@@ -259,3 +259,18 @@ Basics:
 	* Multi region, fully replicated, high performance
 * Amazon DMS can be used to migrate to DynamoDB
 * You can launch a local DynamoDB on your computer for dev purposes
+
+
+# TLDR - Exam Tips:
+## Which Secondary Index to choose
+* Local Secondary Index
+  * Only use if you won't have item collections over 10GB
+  * You can define this during table creation
+  * You can save money by sharing capacity with base table
+  * Secondary index has same index with base table
+  * You need strong consistency
+* Global Secondary Index
+  * Preferred over Local Secondary index
+  * If table exists already you must use GSI
+  * You don't need strong consistency
+
