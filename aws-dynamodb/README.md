@@ -274,3 +274,17 @@ Basics:
   * If table exists already you must use GSI
   * You don't need strong consistency
 
+## Scan vs Query
+* GetItem
+  * Is getting the exact item you want
+* Query
+  * Getting multiple items that have the same Partition key but different sort keys
+* Scan
+  * Scan gets a lot of data and is slow
+
+### ScannedCount vs Count
+* ScannedCount is number of items received
+* Count is number of items returned to the client
+
+
+
